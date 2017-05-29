@@ -1,2 +1,7 @@
+require 'greeter'
+
+# Default is World
 name = ARGV.first || "World"
-puts "Hello, Mr. #{name}"
+
+greeter = Greeter.new(name)
+puts greeter.greet
